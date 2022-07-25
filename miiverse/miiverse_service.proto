@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package miiverse;
+
+option go_package = "github.com/PretendoNetwork/grpc-miiverse";
+
+import "smm_request_post_id_rpc.proto";
+
+service MiiverseService {
+	// Used by Super Mario Maker
+	rpc SMMRequestPostId(SMMRequestPostIdRequest) returns (SMMRequestPostIdResponse) {}
+}

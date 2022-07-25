@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package miiverse;
+
+option go_package = "github.com/PretendoNetwork/grpc-miiverse";
+
+message SMMRequestPostIdRequest {
+	uint64 course_id = 1;
+	// TODO: Other course/user data?
+}
+
+message SMMRequestPostIdResponse {
+	uint64 post_id = 1;
+}
