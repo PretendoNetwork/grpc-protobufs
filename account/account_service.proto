@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "github.com/PretendoNetwork/grpc-account";
+
+import "is_banned_rpc.proto";
+import "get_basic_user_data_rpc.proto";
+
+service AccountService {
+	// Used by Juxt
+	rpc IsBanned(IsBannedRequest) returns (IsBannedResponse) {}
+	rpc GetBasicUserData(GetBasicUserDataRequest) returns (GetBasicUserDataResponse) {}
+}

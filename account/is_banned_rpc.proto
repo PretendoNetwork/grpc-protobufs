@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "github.com/PretendoNetwork/grpc-account";
+
+message IsBannedRequest {
+	string username = 1;
+}
+
+message IsBannedResponse {
+	bool banned = 1;
+}
