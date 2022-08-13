@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package account;
 
-option go_package = "github.com/PretendoNetwork/grpc-account";
+option go_package = "account";
 
 import "mii.proto";
 

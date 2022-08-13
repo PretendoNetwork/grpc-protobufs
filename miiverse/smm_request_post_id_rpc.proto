@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package miiverse;
 
-option go_package = "github.com/PretendoNetwork/grpc-miiverse";
+option go_package = "miiverse";
 
 message SMMRequestPostIdRequest {
 	uint64 course_id = 1;

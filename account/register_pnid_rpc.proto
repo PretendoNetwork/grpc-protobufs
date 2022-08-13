@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "account";
+
+message RegisterPNIDRequest {
+	string email = 1;
+	string username = 2;
+	string password = 3;
+	string password_confirm = 4;
+	string h_captcha_response = 5;
+}
