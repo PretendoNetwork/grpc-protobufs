@@ -9,7 +9,7 @@ import "get_basic_user_data_rpc.proto";
 import "register_pnid_rpc.proto";
 import "login_rpc.proto";
 
-service AccountService {
+service Account {
 	// Used by Juxt
 	rpc IsBanned(IsBannedRequest) returns (IsBannedResponse) {}
 	rpc GetBasicUserData(GetBasicUserDataRequest) returns (GetBasicUserDataResponse) {}

@@ -6,7 +6,7 @@ option go_package = "miiverse";
 
 import "smm_request_post_id_rpc.proto";
 
-service MiiverseService {
+service Miiverse {
 	// Used by Super Mario Maker
 	rpc SMMRequestPostId(SMMRequestPostIdRequest) returns (SMMRequestPostIdResponse) {}
 }
