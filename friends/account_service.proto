@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package friends;
+
+option go_package = "friends";
+
+import "google/protobuf/empty.proto";
+import "send_user_notification_wiiu_rpc.proto";
+
+service Friends {
+	rpc SendUserNotificationWiiU(SendUserNotificationWiiURequest) returns (google.protobuf.Empty) {}
+}
