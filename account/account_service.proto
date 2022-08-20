@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package account;
 
-option go_package = "account";
+option go_package = "./;account";
 
 import "is_banned_rpc.proto";
 import "get_basic_user_data_rpc.proto";
