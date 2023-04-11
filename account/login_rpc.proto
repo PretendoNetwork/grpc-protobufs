@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package account;
 
-option go_package = "./;account";
+option go_package = "./;grpc_account";
 
 message LoginRequest {
 	string username = 1;

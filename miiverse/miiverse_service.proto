@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package miiverse;
 
-option go_package = "./;miiverse";
+option go_package = "./;grpc_miiverse";
 
 import "smm_request_post_id_rpc.proto";
 
