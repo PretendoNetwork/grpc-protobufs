@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package friends;
+
+option go_package = "./;grpc_friends";
+
+message AcceptFriendRequestRequest {
+	uint64 accept = 1;
+}
+
+message AcceptFriendRequestResponse {
+	bool success = 1;
+}
