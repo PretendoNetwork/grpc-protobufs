@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+import "mii.proto";
+
+message GetUserDataRequest {
+	uint32 pid = 1;
+}
+
+message GetUserDataResponse {
+	uint32 pid = 1;
+	string username = 2;
+	uint32 access_level = 3;
+	uint32 server_access_level = 4;
+	Mii mii = 4;
+	string creation_date = 5;
+	string birthdate = 6;
+	string gender = 7;
+	string country = 8;
+	string language = 9;
+	string email_address = 10;
+	string tier_name = 11;
+}

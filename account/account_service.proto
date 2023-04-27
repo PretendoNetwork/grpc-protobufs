@@ -10,11 +10,8 @@ import "register_pnid_rpc.proto";
 import "login_rpc.proto";
 
 service Account {
-	// Used by Juxt
 	rpc IsBanned(IsBannedRequest) returns (IsBannedResponse) {}
-	rpc GetBasicUserData(GetBasicUserDataRequest) returns (GetBasicUserDataResponse) {}
-
-	// Used by website
+	rpc GetUserData(GetUserDataRequest) returns (GetUserDataResponse) {}
 	rpc RegisterPNID(RegisterPNIDRequest) returns (LoginResponse) {}
 	rpc Login(LoginRequest) returns (LoginResponse) {}
 }
