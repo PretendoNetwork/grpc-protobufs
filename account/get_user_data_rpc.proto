@@ -14,7 +14,7 @@ message GetUserDataResponse {
 	uint32 pid = 1;
 	string username = 2;
 	uint32 access_level = 3;
-	uint32 server_access_level = 4;
+	string server_access_level = 4;
 	Mii mii = 5;
 	string creation_date = 6;
 	string birthdate = 7;
