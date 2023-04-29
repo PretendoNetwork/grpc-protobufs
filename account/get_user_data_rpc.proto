@@ -11,16 +11,17 @@ message GetUserDataRequest {
 }
 
 message GetUserDataResponse {
-	uint32 pid = 1;
-	string username = 2;
-	uint32 access_level = 3;
-	string server_access_level = 4;
-	Mii mii = 5;
-	string creation_date = 6;
-	string birthdate = 7;
-	string gender = 8;
-	string country = 9;
-	string language = 10;
-	string email_address = 11;
-	string tier_name = 12;
+	bool deleted = 1;
+	uint32 pid = 2;
+	string username = 3;
+	uint32 access_level = 4;
+	string server_access_level = 5;
+	Mii mii = 6;
+	string creation_date = 7;
+	string birthdate = 8;
+	string gender = 9;
+	string country = 10;
+	string language = 11;
+	string email_address = 12;
+	string tier_name = 13;
 }
