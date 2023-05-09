@@ -5,11 +5,7 @@ package account;
 option go_package = "./;grpc_account";
 
 import "get_user_data_rpc.proto";
-import "register_pnid_rpc.proto";
-import "login_rpc.proto";
 
 service Account {
 	rpc GetUserData(GetUserDataRequest) returns (GetUserDataResponse) {}
-	rpc RegisterPNID(RegisterPNIDRequest) returns (LoginResponse) {}
-	rpc Login(LoginRequest) returns (LoginResponse) {}
 }

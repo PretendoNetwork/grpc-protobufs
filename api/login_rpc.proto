@@ -1,12 +1,14 @@
 syntax = "proto3";
 
-package account;
+package api;
 
-option go_package = "./;grpc_account";
+option go_package = "./;grpc_api";
 
 message LoginRequest {
-	string username = 1;
-	string password = 2;
+	string grant_type = 1;
+	optional string username = 2;
+	optional string password = 3;
+	optional string refresh_token = 4;
 }
 
 message LoginResponse {
