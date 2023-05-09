@@ -15,7 +15,7 @@ import "set_discord_connection_data_rpc.proto";
 import "set_stripe_connection_data_rpc.proto";
 import "remove_connection_rpc.proto";
 
-service Account {
+service API {
 	rpc Register(RegisterPNIDRequest) returns (LoginResponse) {}
 	rpc Login(LoginRequest) returns (LoginResponse) {}
 	rpc GetUserData(google.protobuf.Empty) returns (GetUserDataResponse) {}
