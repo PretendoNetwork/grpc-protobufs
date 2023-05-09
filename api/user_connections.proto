@@ -12,7 +12,7 @@ message StripeConnection {
 	optional string customer_id = 1;
 	optional string subscription_id = 2;
 	optional string price_id = 3;
-	optional uint8 tier_level = 4;
+	optional uint32 tier_level = 4;
 	optional string tier_name = 5;
 	uint64 latest_webhook_timestamp = 6;
 }

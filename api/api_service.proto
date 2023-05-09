@@ -16,7 +16,7 @@ import "set_stripe_connection_data_rpc.proto";
 import "remove_connection_rpc.proto";
 
 service API {
-	rpc Register(RegisterPNIDRequest) returns (LoginResponse) {}
+	rpc Register(RegisterRequest) returns (LoginResponse) {}
 	rpc Login(LoginRequest) returns (LoginResponse) {}
 	rpc GetUserData(google.protobuf.Empty) returns (GetUserDataResponse) {}
 	rpc UpdateUserData(UpdateUserDataRequest) returns (GetUserDataResponse) {}

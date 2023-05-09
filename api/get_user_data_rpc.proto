@@ -18,7 +18,7 @@ message GetUserDataResponse {
 	Mii mii = 8;
 	string birthday = 9;
 	string gender = 10;
-	string country = 12;
+	string country = 11;
 	string timezone = 12;
 	string language = 13;
 	string email_address = 14;
