@@ -12,5 +12,5 @@ message SetStripeConnectionDataRequest {
 	optional string tier_name = 5;
 	uint64 timestamp = 6;
 	optional uint32 access_level = 7;
-	optional uint32 server_access_level = 8;
+	optional string server_access_level = 8;
 }
