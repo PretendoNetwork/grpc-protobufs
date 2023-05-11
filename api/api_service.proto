@@ -13,7 +13,6 @@ import "forgot_password_rpc.proto";
 import "reset_password_rpc.proto";
 import "set_discord_connection_data_rpc.proto";
 import "set_stripe_connection_data_rpc.proto";
-import "remove_connection_rpc.proto";
 
 service API {
 	rpc Register(RegisterRequest) returns (LoginResponse) {}
@@ -24,5 +23,4 @@ service API {
 	rpc ResetPassword(ResetPasswordRequest) returns (google.protobuf.Empty) {}
 	rpc SetDiscordConnectionData(SetDiscordConnectionDataRequest) returns (google.protobuf.Empty) {}
 	rpc SetStripeConnectionData(SetStripeConnectionDataRequest) returns (google.protobuf.Empty) {}
-	rpc RemoveConnection(RemoveConnectionRequest) returns (google.protobuf.Empty) {}
 }
