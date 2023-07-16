@@ -6,8 +6,10 @@ option go_package = "./;grpc_account";
 
 import "get_user_data_rpc.proto";
 import "get_nex_password_rpc.proto";
+import "get_nex_data_rpc.proto";
 
 service Account {
 	rpc GetUserData(GetUserDataRequest) returns (GetUserDataResponse) {}
 	rpc GetNEXPassword(GetNEXPasswordRequest) returns (GetNEXPasswordResponse) {}
+	rpc GetNEXData(GetNEXDataRequest) returns (GetNEXDataResponse) {}
 }
