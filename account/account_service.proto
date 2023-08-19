@@ -4,12 +4,15 @@ package account;
 
 option go_package = "./;grpc_account";
 
+import "google/protobuf/empty.proto";
 import "get_user_data_rpc.proto";
 import "get_nex_password_rpc.proto";
 import "get_nex_data_rpc.proto";
+import "update_pnid_permissions.proto";
 
 service Account {
 	rpc GetUserData(GetUserDataRequest) returns (GetUserDataResponse) {}
 	rpc GetNEXPassword(GetNEXPasswordRequest) returns (GetNEXPasswordResponse) {}
 	rpc GetNEXData(GetNEXDataRequest) returns (GetNEXDataResponse) {}
+	rpc UpdatePNIDPermissions(UpdatePNIDPermissionsRequest) returns (google.protobuf.Empty) {}
 }

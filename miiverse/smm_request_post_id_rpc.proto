@@ -4,11 +4,11 @@ package miiverse;
 
 option go_package = "./;grpc_miiverse";
 
-message SMMRequestPostIdRequest {
+message SMMRequestPostIDRequest {
 	uint64 course_id = 1;
-	// TODO: Other course/user data?
+	// TODO - Other course/user data?
 }
 
-message SMMRequestPostIdResponse {
+message SMMRequestPostIDResponse {
 	uint64 post_id = 1;
 }
