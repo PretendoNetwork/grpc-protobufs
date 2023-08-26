@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package boss;
+
+option go_package = "./;grpc_boss";
+
+message UpdateFileMetadataData {
+	string task_id = 1;
+	string boss_app_id = 2;
+	repeated string supported_countries = 3;
+	repeated string supported_languages = 4;
+	string name = 5;
+	string type = 6;
+	repeated string notify_on_new = 7;
+	bool notify_led = 8;
+}
+
+message UpdateFileMetadataRequest {
+	uint64 data_id = 1;
+	UpdateFileMetadataData update_data = 2;
+}

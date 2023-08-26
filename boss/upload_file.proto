@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package boss;
+
+option go_package = "./;grpc_boss";
+
+import "file.proto";
+
+message UploadFileRequest {
+	string task_id = 1;
+	string boss_app_id = 2;
+	repeated string supported_countries = 3;
+	repeated string supported_languages = 4;
+	string name = 5;
+	string type = 6;
+	repeated string notify_on_new = 7;
+	bool notify_led = 8;
+	bytes data = 9;
+	bool name_equals_data_id = 10;
+}
+
+message UploadFileResponse {
+	File file = 1;
+}

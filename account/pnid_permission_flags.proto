@@ -20,4 +20,10 @@ message PNIDPermissionFlags {
 	bool ban_consoles = 13;
 	bool moderate_miiverse = 14;
 	bool create_api_keys = 15;
+	bool create_boss_tasks = 16;
+	bool update_boss_tasks = 17;
+	bool delete_boss_tasks = 18;
+	bool upload_boss_files = 19;
+	bool update_boss_files = 20;
+	bool delete_boss_files = 21;
 }
