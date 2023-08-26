@@ -7,6 +7,7 @@ option go_package = "./;grpc_boss";
 message Task {
 	bool deleted = 1;
 	string id = 2;
+	string in_game_id = 3;
 	string boss_app_id = 4;
 	uint32 creator_pid = 5;
 	string status = 6;
