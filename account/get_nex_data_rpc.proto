@@ -4,6 +4,11 @@ package account;
 
 option go_package = "./;grpc_account";
 
+enum DeviceType {
+	CTR = 0;
+	WUP = 1;
+}
+
 message GetNEXDataRequest {
 	uint32 pid = 1;
 }
@@ -15,4 +20,5 @@ message GetNEXDataResponse {
 	uint32 access_level = 4;
 	string server_access_level = 5;
 	string friend_code = 6;
+	DeviceType device_type = 7;
 }
