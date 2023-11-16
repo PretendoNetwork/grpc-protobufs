@@ -9,10 +9,14 @@ message UpdateFileMetadataData {
 	string boss_app_id = 2;
 	repeated string supported_countries = 3;
 	repeated string supported_languages = 4;
-	string name = 5;
-	string type = 6;
-	repeated string notify_on_new = 7;
-	bool notify_led = 8;
+	string password = 5;
+	string attribute1 = 6;
+	string attribute2 = 7;
+	string attribute3 = 8;
+	string name = 9;
+	string type = 10;
+	repeated string notify_on_new = 11;
+	bool notify_led = 12;
 }
 
 message UpdateFileMetadataRequest {
