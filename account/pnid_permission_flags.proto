@@ -26,4 +26,5 @@ message PNIDPermissionFlags {
 	bool upload_boss_files = 19;
 	bool update_boss_files = 20;
 	bool delete_boss_files = 21;
+	bool update_pnid_permissions = 22;
 }
