@@ -13,7 +13,7 @@ message GetUserDataResponse {
 	string updated_date = 3;
 	uint32 pid = 4;
 	string username = 5;
-	uint32 access_level = 6;
+	int32 access_level = 6;
 	string server_access_level = 7;
 	Mii mii = 8;
 	string birthday = 9;
