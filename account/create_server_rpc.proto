@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+message CreateServerRequest {
+	string environment = 1;
+	bool maintenance_mode = 2;
+	string client_id = 3; // * Used in service token requests
+	string game_server_id = 4; // * Used in NEX token requests
+	repeated string title_ids = 5; // * Used in NASC
+	// TODO - "service" is a bit confusing? Should we rename this?
+	string type = 6; // * Either "nex" for a game server or "service" for a 3rd party service
+	string name = 7;
+	string description = 8; // * Futureproofing. Will be used for 3rd parties using our infrastructure
+	string ip = 9;
+	uint32 port = 10; // * In reality this is only ever a uint16, but protobuf only supports 4 and 8 byte fixed size integers
+	string aes_key = 11;
+}
+
+message CreateServerResponse {
+	string id = 1;
+}

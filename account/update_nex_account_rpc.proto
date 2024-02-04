@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+// TODO - What should this actually update?
+message UpdateNEXAccountRequest {}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+import "device_type.proto";
+
+message NEXAccount {
+	uint32 pid = 1;
+	string password = 2; // * Send this?
+	uint32 pnid_pid = 3; // * Only seen on Wii U accounts
+	int32 access_level = 4; // TODO - Replace this with permission flags
+	string environment = 4;
+	string friend_code = 5;
+	DeviceType origin_device = 6;
+}
+
+message ListNEXAccounts {
+	repeated NEXAccount nex_accounts = 1;
+}

@@ -8,8 +8,18 @@ import "google/protobuf/empty.proto";
 import "get_user_data_rpc.proto";
 import "get_nex_password_rpc.proto";
 import "get_nex_data_rpc.proto";
-import "update_pnid_permissions.proto";
-import "exchange_token_for_user_data.proto";
+import "update_pnid_permissions_rpc.proto";
+import "exchange_token_for_user_data_rpc.proto";
+import "create_server_rpc.proto";
+import "update_server_rpc.proto";
+import "update_pnid_rpc.proto";
+import "update_nex_account_rpc.proto";
+import "list_servers_minimal_rpc.proto";
+import "list_servers_rpc.proto";
+import "list_pnids_minimal_rpc.proto";
+import "list_pnids_rpc.proto";
+import "list_nex_accounts_minimal_rpc.proto";
+import "list_nex_accounts_rpc.proto";
 
 service Account {
 	rpc GetUserData(GetUserDataRequest) returns (GetUserDataResponse) {}
@@ -17,4 +27,14 @@ service Account {
 	rpc GetNEXData(GetNEXDataRequest) returns (GetNEXDataResponse) {}
 	rpc UpdatePNIDPermissions(UpdatePNIDPermissionsRequest) returns (google.protobuf.Empty) {}
 	rpc ExchangeTokenForUserData(ExchangeTokenForUserDataRequest) returns (GetUserDataResponse) {}
+	rpc CreateServer(CreateServerRequest) returns (CreateServerResponse) {}
+	rpc UpdateServer(UpdateServerRequest) returns (google.protobuf.Empty) {}
+	rpc UpdatePNID(UpdatePNIDRequest) returns (google.protobuf.Empty) {}
+	rpc UpdateNEXAccount(UpdateNEXAccountRequest) returns (google.protobuf.Empty) {}
+	rpc ListServersMinimal(google.protobuf.Empty) returns (ListServersMinimalResponse) {}
+	rpc ListServers(google.protobuf.Empty) returns (ListServersResponse) {}
+	rpc ListPNIDsMinimal(google.protobuf.Empty) returns (ListPNIDsMinimalResponse) {}
+	rpc ListPNIDs(google.protobuf.Empty) returns (ListPNIDsResponse) {}
+	rpc ListNEXAccountsMinimal(google.protobuf.Empty) returns (ListPNIDsMinimalResponse) {}
+	rpc ListNEXAccounts(google.protobuf.Empty) returns (ListPNIDsResponse) {}
 }

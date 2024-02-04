@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+message NEXAccountMinimal {
+	uint32 pid = 1;
+	string friend_code = 2; // * Only used on 3DS
+}
+
+message ListNEXAccountsMinimal {
+	repeated NEXAccountMinimal nex_accounts = 1;
+}
