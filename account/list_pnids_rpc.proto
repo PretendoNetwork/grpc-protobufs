@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+// TODO - Anything missing? Is this a good order for the data?
+message PNID {
+	bool deleted = 1;
+	string environment = 2;
+	uint32 pid = 3;
+	string username = 4;
+	string role = 5;
+	Mii mii = 6;
+	string birthday = 7;
+	string gender = 8;
+	string country = 9;
+	string language = 10;
+	uint32 region = 11; // * See https://gist.github.com/jonbarrow/15eb9665c474d6d0a2679da4691d2886 for region ID details
+	string timezone_name = 12;
+	uint32 timezone_offset = 13;
+	bool active_flag = 14; // TODO - What are these flags? Rename these?
+	bool marketing_flag = 15; // TODO - What are these flags? Rename these?
+	bool off_device_flag = 16; // TODO - What are these flags? Rename these?
+	string email = 17;
+	string tier_name = 18;
+	string creation_date = 19;
+	PNIDPermissionFlags permissions = 20;
+}
+
+message ListServersResponse {
+	repeated PNID pnids = 1;
+}

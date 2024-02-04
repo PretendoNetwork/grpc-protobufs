@@ -29,4 +29,6 @@ service Account {
 	rpc UpdateNEXAccount(UpdateNEXAccountRequest) returns (google.protobuf.Empty) {}
 	rpc ListServersMinimal(google.protobuf.Empty) returns (ListServersMinimalResponse) {}
 	rpc ListServers(google.protobuf.Empty) returns (ListServersResponse) {}
+	rpc ListPNIDsMinimal(google.protobuf.Empty) returns (ListPNIDsMinimalResponse) {}
+	rpc ListPNIDs(google.protobuf.Empty) returns (ListPNIDsResponse) {}
 }
