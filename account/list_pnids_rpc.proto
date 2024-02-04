@@ -28,6 +28,6 @@ message PNID {
 	PNIDPermissionFlags permissions = 20;
 }
 
-message ListServersResponse {
+message ListPNIDsResponse {
 	repeated PNID pnids = 1;
 }
