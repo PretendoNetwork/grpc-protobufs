@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+message ServerMinimal {
+	string environment = 1;
+	string id = 2;
+	string type = 3;
+	string name = 4;
+}
+
+message ListServersMinimalResponse {
+	repeated ServerMinimal servers = 1;
+}

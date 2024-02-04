@@ -14,6 +14,8 @@ import "create_server_rpc.proto";
 import "update_server_rpc.proto";
 import "update_pnid_rpc.proto";
 import "update_nex_account_rpc.proto";
+import "list_servers_minimal_rpc.proto";
+import "list_servers_rpc.proto";
 
 service Account {
 	rpc GetUserData(GetUserDataRequest) returns (GetUserDataResponse) {}
@@ -25,4 +27,6 @@ service Account {
 	rpc UpdateServer(UpdateServerRequest) returns (google.protobuf.Empty) {}
 	rpc UpdatePNID(UpdatePNIDRequest) returns (google.protobuf.Empty) {}
 	rpc UpdateNEXAccount(UpdateNEXAccountRequest) returns (google.protobuf.Empty) {}
+	rpc ListServersMinimal(google.protobuf.Empty) returns (ListServersMinimalResponse) {}
+	rpc ListServers(google.protobuf.Empty) returns (ListServersResponse) {}
 }
