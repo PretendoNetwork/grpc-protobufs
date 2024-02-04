@@ -12,6 +12,7 @@ import "update_pnid_permissions_rpc.proto";
 import "exchange_token_for_user_data_rpc.proto";
 import "create_server_rpc.proto";
 import "update_server_rpc.proto";
+import "update_pnid_rpc.proto";
 
 service Account {
 	rpc GetUserData(GetUserDataRequest) returns (GetUserDataResponse) {}
@@ -21,4 +22,5 @@ service Account {
 	rpc ExchangeTokenForUserData(ExchangeTokenForUserDataRequest) returns (GetUserDataResponse) {}
 	rpc CreateServer(CreateServerRequest) returns (CreateServerResponse) {}
 	rpc UpdateServer(UpdateServerRequest) returns (google.protobuf.Empty) {}
+	rpc UpdatePNID(UpdatePNIDRequest) returns (google.protobuf.Empty) {}
 }
