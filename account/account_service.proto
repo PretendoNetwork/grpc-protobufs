@@ -13,6 +13,7 @@ import "exchange_token_for_user_data_rpc.proto";
 import "create_server_rpc.proto";
 import "update_server_rpc.proto";
 import "update_pnid_rpc.proto";
+import "update_nex_account_rpc.proto";
 
 service Account {
 	rpc GetUserData(GetUserDataRequest) returns (GetUserDataResponse) {}
@@ -23,4 +24,5 @@ service Account {
 	rpc CreateServer(CreateServerRequest) returns (CreateServerResponse) {}
 	rpc UpdateServer(UpdateServerRequest) returns (google.protobuf.Empty) {}
 	rpc UpdatePNID(UpdatePNIDRequest) returns (google.protobuf.Empty) {}
+	rpc UpdateNEXAccount(UpdateNEXAccountRequest) returns (google.protobuf.Empty) {}
 }
