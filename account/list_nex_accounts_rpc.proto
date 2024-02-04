@@ -10,7 +10,7 @@ message NEXAccount {
 	uint32 pid = 1;
 	string password = 2; // * Send this?
 	uint32 pnid_pid = 3; // * Only seen on Wii U accounts
-	uint32 access_level = 4; // TODO - Replace this with permission flags
+	int32 access_level = 4; // TODO - Replace this with permission flags
 	string environment = 4;
 	string friend_code = 5;
 	DeviceType origin_device = 6;
