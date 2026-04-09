@@ -1,3 +1,6 @@
+# Deprecated
+# See https://github.com/PretendoNetwork/grpc
+
 # gRPC Protobufs
 
 gRPC protobuf definitions for Pretendo micro-services
