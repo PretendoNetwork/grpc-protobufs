@@ -4,10 +4,7 @@ package account;
 
 option go_package = "./;grpc_account";
 
-enum DeviceType {
-	CTR = 0;
-	WUP = 1;
-}
+import "device_type.proto";
 
 message GetNEXDataRequest {
 	uint32 pid = 1;

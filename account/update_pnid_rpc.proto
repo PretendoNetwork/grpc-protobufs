@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+import "create_server_rpc.proto";
+
+// TODO - What all do we ACTUALLY want to update from the admin panel? There's some stuff we can't like PID and password, but what about emails and connections and such?
+message UpdatePNIDRequest {
+	string environment = 1;
+	string birthday = 2;
+	string gender = 3;
+	string country = 4;
+	string language = 5;
+	string email = 6;
+	uint32 region = 7; // * See https://gist.github.com/jonbarrow/15eb9665c474d6d0a2679da4691d2886 for region ID details
+	string timezone_name = 8;
+	uint32 timezone_offset = 9;
+	string mii_data = 10;
+	bool active_flag = 11; // TODO - What are these flags? Rename these?
+	bool marketing_flag = 12; // TODO - What are these flags? Rename these?
+	bool off_device_flag = 13; // TODO - What are these flags? Rename these?
+}

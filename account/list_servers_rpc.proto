@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+// * Basically just CreateServerRequest?
+message Server {
+	string environment = 1;
+	bool maintenance_mode = 2;
+	string client_id = 3;
+	string game_server_id = 4;
+	repeated string title_ids = 5;
+	string type = 6;
+	string name = 7;
+	string description = 8;
+	string ip = 9;
+	uint32 port = 10;
+	string aes_key = 11;
+}
+
+message ListServersResponse {
+	repeated Server servers = 1;
+}

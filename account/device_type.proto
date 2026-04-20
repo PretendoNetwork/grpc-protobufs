@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+enum DeviceType {
+	CTR = 0;
+	WUP = 1;
+}

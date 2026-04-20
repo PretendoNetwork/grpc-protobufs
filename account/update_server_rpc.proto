@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+import "create_server_rpc.proto";
+
+message UpdateServerRequest {
+	string id = 1;
+	CreateServerRequest update_data = 2;
+}

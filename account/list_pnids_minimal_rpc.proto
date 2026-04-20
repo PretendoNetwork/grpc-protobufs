@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package account;
+
+option go_package = "./;grpc_account";
+
+message PNIDMinimal {
+	uint32 pid = 1;
+	string username = 2;
+	string mii_url = 3;
+}
+
+message ListPNIDsMinimalResponse {
+	repeated PNIDMinimal pnids = 1;
+}
